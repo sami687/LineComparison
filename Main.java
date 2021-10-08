@@ -1,7 +1,7 @@
 package com.bl.linecomparison;
 
 public class Main {
-     public static void (String[] args) {
+     public static void main (String[] args) {
     	 
     	 Point p1 = new Point();
         p1.x = 4;
@@ -12,12 +12,12 @@ public class Main {
      p2.y = 9;
      
    	 Point p3 = new Point();
-     p3.x = 9;
-     p3.y = 8;
+     p3.x = 4;
+     p3.y = 2;
      
    	 Point p4 = new Point();
-      p4.x = 6;
-      p4.y = 7;
+      p4.x = 5;
+      p4.y = 9;
       
       Line line1 = new Line();
       line1.p1 = p1;
@@ -31,7 +31,12 @@ public class Main {
       Double lineLength2 = line2.getLengthLine1(p3, p4);
       System.out.println("Line 1 Length:" +lineLength1);
       System.out.println("Line 2 Length:" +lineLength2);
-       Line line = new Line();
-       line.compare(lineLength1, lineLength2);
+     		if (lineLength1.equals(lineLength2)) {
+				System.out.println("Line 1 and Line 2 are equal");
+			}
+			else {
+				System.out.println("Line 1 and Line 2 are not equal");
+			}
+		
      }
 }
