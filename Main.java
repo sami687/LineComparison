@@ -1,7 +1,7 @@
 package com.bl.linecomparison;
 
 public class Main {
-     public static void main(String[] args) {
+     public static void (String[] args) {
     	 
     	 Point p1 = new Point();
         p1.x = 4;
@@ -31,6 +31,7 @@ public class Main {
       Double lineLength2 = line2.getLengthLine1(p3, p4);
       System.out.println("Line 1 Length:" +lineLength1);
       System.out.println("Line 2 Length:" +lineLength2);
-
+       Line line = new Line();
+       line.compare(lineLength1, lineLength2);
      }
 }
